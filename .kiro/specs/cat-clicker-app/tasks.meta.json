@@ -1,0 +1,160 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `index.html` with HTML5 boilerplate, `<meta charset>`, `<meta name=\"viewport\">`, and `<title>`": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351345687
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351360203
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351633150
+      }
+    ],
+    "2.1 Add full-viewport pastel gradient background and Flexbox centering": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351347434
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351644928
+      }
+    ],
+    "3.1 Create the cat button and SVG illustration": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348184
+      }
+    ],
+    "4.1 Write all animation keyframes in the `<style>` block": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348299
+      }
+    ],
+    "5.1 Add the speech bubble element to HTML and style it": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348424
+      }
+    ],
+    "6.1 Add the Pat Counter HTML element with Glassmorphism styling": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348532
+      }
+    ],
+    "7.1 Add the Milestone Banner HTML element": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348651
+      }
+    ],
+    "8.1 Define `REACTIONS` array and `MILESTONES` set in the `<script>` block": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348747
+      }
+    ],
+    "9.1 Implement `selectReaction(pool, lastId)` pure function": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351348951
+      }
+    ],
+    "10.1 Implement `cancelActiveReaction()`, `applyAnimationReaction(reaction)`, and `applySpeechReaction(reaction)`": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351349128
+      }
+    ],
+    "11.1 Implement counter rendering with pop animation": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351349314
+      }
+    ],
+    "12.1 Implement milestone text helper and banner display": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351349417
+      }
+    ],
+    "13.1 Implement `loadCount()` and `persistCount(count)` with error handling": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351349651
+      }
+    ],
+    "14.1 Implement `handlePet()` as the single entry-point for all pet events": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351349811
+      }
+    ],
+    "15.1 Implement `initApp()` and attach all event listeners": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351350029
+      }
+    ],
+    "16.1 Verify and fix responsive cat sizing and speech bubble overflow": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351350115
+      }
+    ],
+    "17. Checkpoint — full smoke pass": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351350277
+      }
+    ],
+    "18.1 Set up Vitest test file with static shape checks": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351350409
+      }
+    ],
+    "19. Final checkpoint — all tests pass": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351350672
+      }
+    ],
+    "1. Project scaffold — `index.html` skeleton": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783351633698
+      }
+    ]
+  }
+}
