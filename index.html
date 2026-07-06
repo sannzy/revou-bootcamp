@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Clicker App</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Quicksand -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Quicksand', sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+      }
+
+      @keyframes bounce-cat {
+        0%, 100% { transform: translateY(0) scale(1); }
+        40%       { transform: translateY(-20px) scale(1.05); }
+        70%       { transform: translateY(-8px) scale(1.02); }
+      }
+      .animate-bounce-cat {
+        animation: bounce-cat 600ms ease-in-out forwards;
+      }
+
+      @keyframes wiggle-cat {
+        0%, 100% { transform: rotate(0deg) scale(1); }
+        25%      { transform: rotate(-8deg) scale(1.05); }
+        75%      { transform: rotate(8deg) scale(1.05); }
+      }
+      .animate-wiggle-cat {
+        animation: wiggle-cat 500ms ease-in-out forwards;
+      }
+
+      @keyframes squish-cat {
+        0%, 100% { transform: scale(1, 1); }
+        30%      { transform: scale(1.15, 0.85); }
+        60%      { transform: scale(0.9, 1.1); }
+      }
+      .animate-squish-cat {
+        animation: squish-cat 700ms ease-in-out forwards;
+      }
+
+      @keyframes pop {
+        0%   { transform: scale(1); }
+        50%  { transform: scale(1.25); }
+        100% { transform: scale(1); }
+      }
+      .pop {
+        animation: pop 200ms ease-in-out forwards;
+      }
+
+      @keyframes fade-in-down {
+        from { opacity: 0; transform: translateY(-20px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in-down {
+        animation: fade-in-down 300ms ease-in-out forwards;
+      }
+
+      @keyframes fade-out-up {
+        from { opacity: 1; transform: translateY(0); }
+        to   { opacity: 0; transform: translateY(-20px); }
+      }
+      .fade-out-up {
+        animation: fade-out-up 400ms ease-in-out forwards;
+      }
+
+      /* Responsive sizing overrides — ensures cat meets minimum size requirements
+         even if Tailwind CDN JIT doesn't include the exact w-48/sm:w-80 classes */
+      @media (max-width: 639px) {
+        #cat {
+          min-width: 200px;
+          min-height: 200px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      @media (min-width: 640px) {
+        #cat {
+          min-width: 320px;
+          min-height: 320px;
+          width: 320px;
+          height: 320px;
+        }
+      }
+
+      /* Speech bubble viewport safety */
+      #speech-bubble {
+        max-width: calc(100vw - 2rem);
+        word-break: break-word;
+        white-space: normal;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center">
+
+    <!-- Cat button + SVG illustration -->
+    <div class="relative flex flex-col items-center">
+      <div
+        id="speech-bubble"
+        class="absolute opacity-0 pointer-events-none bottom-full mb-3 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg px-4 py-2 text-pink-700 font-semibold text-sm transition-opacity duration-300"
+        style="max-width: calc(100vw - 2rem);"
+        aria-live="polite"
+      ></div>
+      <button
+        id="cat"
+        aria-label="Pet the cat"
+        class="cursor-pointer aspect-square focus:outline-none focus:ring-4 focus:ring-pink-300 w-48 h-48 sm:w-80 sm:h-80"
+      >
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <!-- Cushion / mat beneath the cat -->
+          <ellipse cx="100" cy="178" rx="72" ry="16" fill="#F9A8D4" opacity="0.7" />
+
+          <!-- Cat body (rounded torso) -->
+          <ellipse cx="100" cy="140" rx="46" ry="42" fill="#D6A77A" />
+
+          <!-- Cat head -->
+          <circle cx="100" cy="90" r="42" fill="#D6A77A" />
+
+          <!-- Left ear (outer) -->
+          <polygon points="62,60 52,28 82,52" fill="#D6A77A" />
+          <!-- Left ear (inner) -->
+          <polygon points="65,57 58,36 78,53" fill="#F4C2A1" />
+
+          <!-- Right ear (outer) -->
+          <polygon points="138,60 148,28 118,52" fill="#D6A77A" />
+          <!-- Right ear (inner) -->
+          <polygon points="135,57 142,36 122,53" fill="#F4C2A1" />
+
+          <!-- Face: eyes (dots) -->
+          <circle cx="84" cy="88" r="6" fill="#4A3728" />
+          <circle cx="116" cy="88" r="6" fill="#4A3728" />
+          <!-- Eye shine -->
+          <circle cx="87" cy="85" r="2" fill="white" />
+          <circle cx="119" cy="85" r="2" fill="white" />
+
+          <!-- Nose -->
+          <ellipse cx="100" cy="100" rx="4" ry="3" fill="#E8748A" />
+
+          <!-- Mouth -->
+          <path d="M96 103 Q100 108 104 103" stroke="#C45B6E" stroke-width="1.5" fill="none" stroke-linecap="round" />
+
+          <!-- Whiskers left -->
+          <line x1="60" y1="98" x2="90" y2="101" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+          <line x1="60" y1="104" x2="90" y2="104" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+          <line x1="62" y1="110" x2="90" y2="107" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+
+          <!-- Whiskers right -->
+          <line x1="140" y1="98" x2="110" y2="101" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+          <line x1="140" y1="104" x2="110" y2="104" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+          <line x1="138" y1="110" x2="110" y2="107" stroke="#A07850" stroke-width="1.2" stroke-linecap="round" opacity="0.7" />
+
+          <!-- Blush marks (left) -->
+          <ellipse cx="72" cy="108" rx="9" ry="5" fill="#F4A0B0" opacity="0.55" />
+          <!-- Blush marks (right) -->
+          <ellipse cx="128" cy="108" rx="9" ry="5" fill="#F4A0B0" opacity="0.55" />
+
+          <!-- Front paws -->
+          <ellipse cx="80" cy="176" rx="16" ry="9" fill="#D6A77A" />
+          <ellipse cx="120" cy="176" rx="16" ry="9" fill="#D6A77A" />
+
+          <!-- Paw toe lines (left) -->
+          <line x1="74" y1="180" x2="74" y2="173" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+          <line x1="80" y1="181" x2="80" y2="174" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+          <line x1="86" y1="180" x2="86" y2="173" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+
+          <!-- Paw toe lines (right) -->
+          <line x1="114" y1="180" x2="114" y2="173" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+          <line x1="120" y1="181" x2="120" y2="174" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+          <line x1="126" y1="180" x2="126" y2="173" stroke="#C49060" stroke-width="1" stroke-linecap="round" />
+
+          <!-- Tail (curved, peeking from behind body) -->
+          <path d="M148 162 Q172 140 160 116 Q154 106 148 114" stroke="#C49060" stroke-width="10" fill="none" stroke-linecap="round" />
+          <path d="M148 162 Q172 140 160 116 Q154 106 148 114" stroke="#D6A77A" stroke-width="7" fill="none" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div
+      id="pat-counter"
+      class="bg-white/30 backdrop-blur-lg rounded-full border border-white/40 px-6 py-3 mt-6 flex items-center gap-2 text-pink-800 font-bold text-lg"
+    >
+      <span>🐾</span>
+      <span id="pat-count">0</span>
+      <span>Pats</span>
+    </div>
+
+    <div
+      id="milestone-banner"
+      class="fixed inset-0 flex items-center justify-center z-50 pointer-events-none"
+      style="display:none"
+    >
+      <div class="bg-white/40 backdrop-blur-xl rounded-3xl shadow-2xl px-10 py-8 flex flex-col items-center gap-3 border border-white/50">
+        <p id="milestone-text" class="text-4xl font-bold text-pink-700 text-center"></p>
+      </div>
+    </div>
+
+    <script>
+      const REACTIONS = [
+        { id: 'bounce',  type: 'animation', cssClass: 'animate-bounce-cat', durationMs: 600 },
+        { id: 'wiggle',  type: 'animation', cssClass: 'animate-wiggle-cat', durationMs: 500 },
+        { id: 'squish',  type: 'animation', cssClass: 'animate-squish-cat', durationMs: 700 },
+        { id: 'purr',    type: 'speech',    message: 'purr~',               displayMs: 1800 },
+        { id: 'nya',     type: 'speech',    message: 'nya \u2661',          displayMs: 2000 },
+        { id: 'headpat', type: 'speech',    message: 'headpat!',            displayMs: 1500 },
+        { id: 'floofy',  type: 'speech',    message: 'so floofy \u2728',    displayMs: 2200 },
+        { id: 'biscuit', type: 'speech',    message: 'making biscuits\u2026', displayMs: 2500 },
+      ];
+
+      const MILESTONES = new Set([10, 25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]);
+
+      const state = {
+        count: 0,
+        lastReactionId: null,
+      };
+
+      // DOM references
+      const catEl             = document.getElementById('cat');
+      const bubbleEl          = document.getElementById('speech-bubble');
+      const patCountEl        = document.getElementById('pat-count');
+      const patCounterEl      = document.getElementById('pat-counter');
+      const milestoneBannerEl = document.getElementById('milestone-banner');
+      const milestoneTextEl   = document.getElementById('milestone-text');
+
+      let activeReactionTimer = null;
+
+      /**
+       * Selects a reaction from the pool, avoiding repeating the last reaction id.
+       * @param {Array} pool - array of reaction objects
+       * @param {string|null} lastId - id of the last reaction (or null)
+       * @returns {Object} selected reaction
+       */
+      function selectReaction(pool, lastId) {
+        if (pool.length < 2) return pool[0];
+        const filtered = pool.filter(r => r.id !== lastId);
+        return filtered[Math.floor(Math.random() * filtered.length)];
+      }
+
+      /**
+       * Loads the pat count from localStorage.
+       * Returns 0 if the stored value is absent, non-numeric, or negative.
+       */
+      function loadCount() {
+        try {
+          const raw = localStorage.getItem('cat-clicker-pat-count');
+          const parsed = parseInt(raw, 10);
+          return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0;
+        } catch (e) {
+          return 0;
+        }
+      }
+
+      /**
+       * Persists the pat count to localStorage.
+       * Silently swallows errors (graceful degradation for private browsing, quota exceeded, etc.)
+       */
+      function persistCount(count) {
+        try {
+          localStorage.setItem('cat-clicker-pat-count', String(count));
+        } catch (e) {
+          // graceful degradation — count still works in memory
+        }
+      }
+
+      /** The list of all animation CSS classes that can be applied to the cat */
+      const ANIMATION_CLASSES = ['animate-bounce-cat', 'animate-wiggle-cat', 'animate-squish-cat'];
+
+      /**
+       * Cancels any in-flight reaction: clears the pending timer, removes all
+       * animation classes from the cat, and hides the speech bubble immediately.
+       */
+      function cancelActiveReaction() {
+        clearTimeout(activeReactionTimer);
+        activeReactionTimer = null;
+        ANIMATION_CLASSES.forEach(cls => catEl.classList.remove(cls));
+        bubbleEl.classList.add('opacity-0', 'pointer-events-none');
+      }
+
+      /**
+       * Applies an animation-type reaction to the cat element.
+       * Adds the CSS class and sets a timer to remove it after durationMs.
+       * @param {{ cssClass: string, durationMs: number }} reaction
+       */
+      function applyAnimationReaction(reaction) {
+        cancelActiveReaction();
+        catEl.classList.add(reaction.cssClass);
+        activeReactionTimer = setTimeout(() => {
+          catEl.classList.remove(reaction.cssClass);
+          activeReactionTimer = null;
+        }, reaction.durationMs);
+      }
+
+      /**
+       * Applies a speech-type reaction by showing the speech bubble.
+       * Two-phase timer: show for displayMs, then fade out over 300ms.
+       * @param {{ message: string, displayMs: number }} reaction
+       */
+      function applySpeechReaction(reaction) {
+        cancelActiveReaction();
+        bubbleEl.textContent = reaction.message;
+        bubbleEl.classList.remove('opacity-0', 'pointer-events-none');
+        activeReactionTimer = setTimeout(() => {
+          bubbleEl.classList.add('opacity-0');
+          activeReactionTimer = setTimeout(() => {
+            bubbleEl.classList.add('pointer-events-none');
+            activeReactionTimer = null;
+          }, 300);
+        }, reaction.displayMs);
+      }
+
+      /**
+       * Increments state.count by 1.
+       */
+      function incrementCounter() {
+        state.count += 1;
+      }
+
+      /**
+       * Updates the DOM pat-count display and triggers the pop animation.
+       */
+      function renderCounter() {
+        patCountEl.textContent = String(state.count);
+        patCounterEl.classList.remove('pop');
+        // Force reflow so removing and re-adding the class triggers the animation
+        void patCounterEl.offsetWidth;
+        patCounterEl.classList.add('pop');
+        setTimeout(() => {
+          patCounterEl.classList.remove('pop');
+        }, 200);
+      }
+
+      let milestoneBannerTimer = null;
+
+      /**
+       * Returns a congratulatory message string for a given milestone.
+       * The string MUST contain String(m).
+       * @param {number} m - the milestone threshold
+       * @returns {string}
+       */
+      function getMilestoneBannerText(m) {
+        return `🎉 ${m} pats! You're amazing!`;
+      }
+
+      /**
+       * Shows the milestone banner for 2500ms, then fades it out over 400ms.
+       * Cancels any previous banner before starting.
+       * @param {number} m - the milestone threshold
+       */
+      function showMilestoneBanner(m) {
+        // Cancel any pending hide timer
+        clearTimeout(milestoneBannerTimer);
+        milestoneBannerEl.classList.remove('fade-in-down', 'fade-out-up');
+
+        milestoneTextEl.textContent = getMilestoneBannerText(m);
+        milestoneBannerEl.style.display = 'flex';
+        milestoneBannerEl.classList.add('fade-in-down');
+
+        milestoneBannerTimer = setTimeout(() => {
+          milestoneBannerEl.classList.remove('fade-in-down');
+          milestoneBannerEl.classList.add('fade-out-up');
+          milestoneBannerTimer = setTimeout(() => {
+            milestoneBannerEl.style.display = 'none';
+            milestoneBannerEl.classList.remove('fade-out-up');
+            milestoneBannerTimer = null;
+          }, 400);
+        }, 2500);
+      }
+
+      /**
+       * Checks if count is a milestone value and shows the banner if so.
+       * @param {number} count
+       */
+      function checkMilestone(count) {
+        if (MILESTONES.has(count)) {
+          showMilestoneBanner(count);
+        }
+      }
+
+      /**
+       * Orchestrates all effects from a single pet event.
+       * This is the single entry-point called by both click and keyboard events.
+       */
+      function handlePet() {
+        const reaction = selectReaction(REACTIONS, state.lastReactionId);
+        if (reaction.type === 'animation') {
+          applyAnimationReaction(reaction);
+        } else {
+          applySpeechReaction(reaction);
+        }
+        state.lastReactionId = reaction.id;
+        incrementCounter();
+        renderCounter();
+        checkMilestone(state.count);
+        persistCount(state.count);
+      }
+
+      /**
+       * Initializes the app: restores persisted count and wires all event listeners.
+       */
+      function initApp() {
+        state.count = loadCount();
+        renderCounter();
+      }
+
+      // Event listener: mouse click
+      catEl.addEventListener('click', handlePet);
+
+      // Event listener: keyboard (Enter or Space)
+      catEl.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          handlePet();
+        }
+      });
+
+      // Boot the app
+      initApp();
+
+      // Expose pure functions for testing (only in test environments)
+      if (typeof window !== 'undefined') {
+        window.__test__ = {
+          loadCount,
+          persistCount,
+          selectReaction,
+          getMilestoneBannerText,
+          checkMilestone,
+          handlePet,
+          incrementCounter,
+          renderCounter,
+          state,
+          REACTIONS,
+          MILESTONES,
+        };
+      }
+    </script>
+  </body>
+</html>

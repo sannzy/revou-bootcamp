@@ -28,6 +28,11 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351644928
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352195938
       }
     ],
     "3.1 Create the cat button and SVG illustration": [
@@ -35,6 +40,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348184
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352200752
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352508864
       }
     ],
     "4.1 Write all animation keyframes in the `<style>` block": [
@@ -42,6 +57,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348299
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352514203
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352816707
       }
     ],
     "5.1 Add the speech bubble element to HTML and style it": [
@@ -49,6 +74,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348424
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352525413
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352824075
       }
     ],
     "6.1 Add the Pat Counter HTML element with Glassmorphism styling": [
@@ -56,6 +91,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348532
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352533981
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352829175
       }
     ],
     "7.1 Add the Milestone Banner HTML element": [
@@ -63,6 +108,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348651
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352541538
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352834343
       }
     ],
     "8.1 Define `REACTIONS` array and `MILESTONES` set in the `<script>` block": [
@@ -70,6 +125,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348747
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352846050
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353264642
       }
     ],
     "9.1 Implement `selectReaction(pool, lastId)` pure function": [
@@ -77,6 +142,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351348951
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353270295
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353438291
       }
     ],
     "10.1 Implement `cancelActiveReaction()`, `applyAnimationReaction(reaction)`, and `applySpeechReaction(reaction)`": [
@@ -84,6 +159,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351349128
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353453405
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353533418
       }
     ],
     "11.1 Implement counter rendering with pop animation": [
@@ -91,6 +176,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351349314
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353565956
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353642687
       }
     ],
     "12.1 Implement milestone text helper and banner display": [
@@ -98,6 +193,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351349417
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353570831
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353648564
       }
     ],
     "13.1 Implement `loadCount()` and `persistCount(count)` with error handling": [
@@ -105,6 +210,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351349651
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353275794
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353443740
       }
     ],
     "14.1 Implement `handlePet()` as the single entry-point for all pet events": [
@@ -112,6 +227,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351349811
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353661676
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353718655
       }
     ],
     "15.1 Implement `initApp()` and attach all event listeners": [
@@ -119,6 +244,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351350029
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353728274
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353814851
       }
     ],
     "16.1 Verify and fix responsive cat sizing and speech bubble overflow": [
@@ -126,6 +261,16 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351350115
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353735142
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353821486
       }
     ],
     "17. Checkpoint — full smoke pass": [
@@ -133,6 +278,11 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351350277
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353841301
       }
     ],
     "18.1 Set up Vitest test file with static shape checks": [
@@ -140,6 +290,11 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351350409
+      },
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353850560
       }
     ],
     "19. Final checkpoint — all tests pass": [
@@ -154,6 +309,111 @@
         "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
         "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
         "timestamp": 1783351633698
+      }
+    ],
+    "2. Pastel gradient background and centered layout": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352196056
+      }
+    ],
+    "3. Cat inline SVG + button wrapper": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352508966
+      }
+    ],
+    "4. CSS keyframes for animations": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352817195
+      }
+    ],
+    "5. Speech bubble component markup": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352824351
+      }
+    ],
+    "6. Pat counter display": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352829575
+      }
+    ],
+    "7. Milestone banner component markup": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783352834759
+      }
+    ],
+    "8. JavaScript constants and state": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353265172
+      }
+    ],
+    "9. `selectReaction()` function with no-repeat logic": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353438728
+      }
+    ],
+    "13. `persistCount()` and `loadCount()` — localStorage persistence": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353444301
+      }
+    ],
+    "10. `cancelActiveReaction()` and reaction application functions": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353533814
+      }
+    ],
+    "11. `renderCounter()` and `incrementCounter()` functions": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353643202
+      }
+    ],
+    "12. `getMilestoneBannerText()` and `showMilestoneBanner()` functions": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353649062
+      }
+    ],
+    "14. `handlePet()` orchestration function": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353718805
+      }
+    ],
+    "15. App initialisation and event wiring": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353815213
+      }
+    ],
+    "16. Responsive sizing verification and viewport-safe speech bubble": [
+      {
+        "executionId": "35346761-74d5-4734-ac97-08da7fab6a74",
+        "chatSessionId": "sess_b52559d9-92d1-401c-a1f0-a91b0a5b4bb0",
+        "timestamp": 1783353821926
       }
     ]
   }
